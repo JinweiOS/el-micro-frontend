@@ -1,0 +1,1 @@
+export const pjw = 1;
