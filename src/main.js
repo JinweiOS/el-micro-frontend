@@ -8,6 +8,5 @@ const name = 'app1';
  * 您可以以任何您喜欢的方式实现此路由。
  * 一种有用的约定是在url前面加上活动应用程序的名称，以使顶层路由保持简单。
  */
-const activeWhen = '/';
-singleSpa.registerApplication({ name, app, (location) => location.pathname.startsWith('/'), });
+singleSpa.registerApplication({ name, app, activeWhen: (location) => location.pathname.startsWith('/') });
 singleSpa.start();
